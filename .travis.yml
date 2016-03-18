@@ -7,6 +7,7 @@ install:
   - cd ../..
   - git clone https://github.com/adobe/brackets-shell adobe/brackets-shell
   - cd adobe/brackets-shell
+  - apt-get install gtk+-2.0
   - npm install -g grunt-cli
   - npm install
   - grunt
