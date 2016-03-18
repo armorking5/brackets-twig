@@ -5,13 +5,5 @@ node_js:
 
 install:
   - cd ../..
-  - sudo apt-get install --assume-yes git libnss3-1d libnspr4-0d gyp gtk+-2.0
-  - sudo apt-get install --assume-yes python-software-properties python g++ make
-  - sudo add-apt-repository ppa:chris-lea/node.js -y
-  - sudo apt-get update --assume-yes
-  - sudo apt-get install --assume-yes nodejs
-  - sudo npm install -g grunt-cli
-  - git clone https://github.com/adobe/brackets-shell adobe/brackets-shell
-  - pushd adobe/brackets-shell
-  - sudo npm install
-  - grunt setup build
+  - wget https://github.com/adobe/brackets/releases/download/release-1.6/Brackets.Release.1.6.64-bit.deb
+  - dpkg -i Brackets.Release.1.6.64-bit.deb
