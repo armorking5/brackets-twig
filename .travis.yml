@@ -7,4 +7,4 @@ install:
   - cd ../..
   - git clone https://github.com/adobe/brackets-shell adobe/brackets-shell
   - cd adobe/brackets-shell
-  - make
+  - grunt
