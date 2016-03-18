@@ -5,4 +5,11 @@ node_js:
 
 install:
   - cd ../..
-  - wget -N https://gist.github.com/jasonsanjose/5514813/raw/setup.sh; bash setup.sh; rm setup.sh
+  - git clone https://github.com/adobe/brackets-shell adobe/brackets-shell
+  - cd adobe/brackets-shell
+  - sudo apt-get install --assume-yes git libnss3-1d libnspr4-0d gyp gtk+-2.0
+  - sudo apt-get install --assume-yes python-software-properties python g++ make
+  - sudo add-apt-repository ppa:chris-lea/node.js -y
+  - sudo apt-get update --assume-yes
+  - sudo apt-get install --assume-yes nodejs
+  - sudo npm install -g grunt-cli
