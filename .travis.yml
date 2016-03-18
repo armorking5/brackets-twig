@@ -6,4 +6,4 @@ node_js:
 install:
   - cd ../..
   - wget https://github.com/adobe/brackets/releases/download/release-1.6/Brackets.Release.1.6.64-bit.deb
-  - dpkg -i Brackets.Release.1.6.64-bit.deb
+  - sudo dpkg -i Brackets.Release.1.6.64-bit.deb
