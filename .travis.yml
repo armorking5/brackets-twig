@@ -2,3 +2,9 @@ language: node_js
 node_js:
 - '0.11'
 - '0.10'
+
+install:
+    cd ../..
+    git clone https://github.com/adobe/brackets-shell adobe/brackets-shell
+    cd adobe/brackets-shell
+    make
