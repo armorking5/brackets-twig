@@ -11,4 +11,5 @@ install:
   - pushd adobe/brackets
   - git submodule update --init
   - sudo tools/setup_for_hacking.sh "/opt/brackets"
-  - ls /opt/brackets
+  - mv ../../Athorcis/brackets-twig src/extensions/dev/brackets-twig
+  - brackets&
