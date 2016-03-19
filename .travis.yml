@@ -7,4 +7,8 @@ install:
   - cd ../..
   - wget https://github.com/adobe/brackets/releases/download/release-1.6/Brackets.Release.1.6.64-bit.deb
   - sudo dpkg -i Brackets.Release.1.6.64-bit.deb
-  - which brackets
+  - git clone https://github.com/adobe/brackets.git adobe/brackets
+  - pushd adobe/brackets
+  - git submodule update --init
+  - sudo tools/setup_for_hacking.sh "/opt/brackets"
+  - ls /opt/brackets
